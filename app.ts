@@ -6,6 +6,7 @@ import mensajeRoutes from './src/routes/mensaje.routes'
 import ordenRoutes from './src/routes/orden.routes'
 import productoRoutes from './src/routes/producto.routes'
 import usuarioRoutes from './src/routes/usuario.routes'
+import statusRoutes from './src/routes/status.routes'
 
 const app = express()
 
@@ -25,6 +26,7 @@ app.use('/api',mensajeRoutes)
 app.use('/api',ordenRoutes)
 app.use('/api',productoRoutes)
 app.use('/api',usuarioRoutes)
+app.use('/api',statusRoutes)
 
 app.listen(3000)
 console.log("Server on port", 3000)
