@@ -1,5 +1,4 @@
 import express from 'express'
-import cors from 'cors'
 
 import personaRoutes from './src/routes/persona.routes'
 import mensajeRoutes from './src/routes/mensaje.routes'
