@@ -9,7 +9,7 @@ import statusRoutes from './src/routes/status.routes'
 
 const app = express()
 
-var allowCrossDomain = function(req, res, next) {
+var allowCrossDomain = function(req :any, res:any, next:any) {
     res.header('Access-Control-Allow-Origin', "*");
     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,PATCH');
     res.header('Access-Control-Allow-Headers', 'Content-Type');
