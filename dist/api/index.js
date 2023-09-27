@@ -4,12 +4,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
-const persona_routes_1 = __importDefault(require("./dist/src/routes/persona.routes"));
-const mensaje_routes_1 = __importDefault(require("./dist/src/routes/mensaje.routes"));
-const orden_routes_1 = __importDefault(require("./dist/src/routes/orden.routes"));
-const producto_routes_1 = __importDefault(require("./dist/src/routes/producto.routes"));
-const usuario_routes_1 = __importDefault(require("./dist/src/routes/usuario.routes"));
-const status_routes_1 = __importDefault(require("./dist/src/routes/status.routes"));
+const persona_routes_1 = __importDefault(require("./routes/persona.routes"));
+const mensaje_routes_1 = __importDefault(require("./routes/mensaje.routes"));
+const orden_routes_1 = __importDefault(require("./routes/orden.routes"));
+const producto_routes_1 = __importDefault(require("./routes/producto.routes"));
+const usuario_routes_1 = __importDefault(require("./routes/usuario.routes"));
+const status_routes_1 = __importDefault(require("./routes/status.routes"));
 const app = (0, express_1.default)();
 var allowCrossDomain = function (req, res, next) {
     res.header('Access-Control-Allow-Origin', "*");

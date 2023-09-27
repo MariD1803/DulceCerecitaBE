@@ -1,5 +1,5 @@
 import {Router} from "express"
-import {PersonaController} from '../controllers/persona.controller'
+import {PersonaController} from '../../src/controllers/persona.controller'
 
 const router = Router()
 

@@ -1,7 +1,7 @@
 import {Router} from "express"
-import {Mensaje} from '../models/mensaje'
-import {MensajeController} from '../controllers/mensaje.controller'
-import { DBError, DBHTTPDict } from "../utils/db"
+import {Mensaje} from '../../src/models/mensaje'
+import {MensajeController} from '../../src/controllers/mensaje.controller'
+import { DBError, DBHTTPDict } from "../../src/utils/db"
 
 const router = Router()
 

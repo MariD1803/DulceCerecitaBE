@@ -1,11 +1,11 @@
 import express from 'express'
 
-import personaRoutes from './src/routes/persona.routes'
-import mensajeRoutes from './src/routes/mensaje.routes'
-import ordenRoutes from './src/routes/orden.routes'
-import productoRoutes from './src/routes/producto.routes'
-import usuarioRoutes from './src/routes/usuario.routes'
-import statusRoutes from './src/routes/status.routes'
+import personaRoutes from './routes/persona.routes'
+import mensajeRoutes from './routes/mensaje.routes'
+import ordenRoutes from './routes/orden.routes'
+import productoRoutes from './routes/producto.routes'
+import usuarioRoutes from './routes/usuario.routes'
+import statusRoutes from './routes/status.routes'
 
 const app = express()
 
