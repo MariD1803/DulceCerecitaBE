@@ -55,6 +55,7 @@ abstract class DBErrorController {
     }
 
     static getInternalError(entity:string, error:any):DBError{
+        print(error)
         return new DBError('internalError','Ocurrio un error interno al procesar los datos de '+entity+error)
     }
 

@@ -40,6 +40,7 @@ class DBErrorController {
         return DBErrorController.getInternalError(entity, error);
     }
     static getInternalError(entity, error) {
+        print(error);
         return new DBError('internalError', 'Ocurrio un error interno al procesar los datos de ' + entity + error);
     }
     static getNotFoundDBError(textMessage) {
