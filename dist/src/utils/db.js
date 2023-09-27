@@ -37,10 +37,10 @@ class DBErrorController {
             const errorTarget = stringError.slice(stringError.indexOf('Unknown argument') + 18, stringError.indexOf('Did') - 3);
             return new DBError("notField", `No existe en ${entity} un campo '${errorTarget}'`);
         }
-        return DBErrorController.getInternalError(entity);
+        return DBErrorController.getInternalError(entity, error);
     }
-    static getInternalError(entity) {
-        return new DBError('internalError', 'Ocurrio un error interno al procesar los datos de ' + entity);
+    static getInternalError(entity, error) {
+        return new DBError('internalError', 'Ocurrio un error interno al procesar los datos de ' + entity + error);
     }
     static getNotFoundDBError(textMessage) {
         return new DBError('notFound', textMessage);

@@ -51,11 +51,11 @@ abstract class DBErrorController {
                 `No existe en ${entity} un campo '${errorTarget}'`,
             )
         }
-        return DBErrorController.getInternalError(entity)
+        return DBErrorController.getInternalError(entity,error)
     }
 
-    static getInternalError(entity:string):DBError{
-        return new DBError('internalError','Ocurrio un error interno al procesar los datos de '+entity)
+    static getInternalError(entity:string, error:any):DBError{
+        return new DBError('internalError','Ocurrio un error interno al procesar los datos de '+entity+error)
     }
 
     static getNotFoundDBError(textMessage:any):DBError{
